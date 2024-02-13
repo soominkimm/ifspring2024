@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Using Images</title>
     <link rel="stylesheet" href="https://wudesign.me/resources/using-images/css/styles.css">
+    <link href="css/styles.css" rel="stylesheet"></link>
   </head>
   <body>
     
@@ -17,7 +18,7 @@
 
         <h1>Basic syntax for the <code class="tag">img</code> tag</h1>
 
-        <p>The <code class="tag">img</code> tag is the simplest and most common way to display an image in an html page. <!-- Put the smiley <img> here. --> It requires a <code>src</code> attribute, which indicates where the browser will find the image, and an <code>alt</code> attribute, which provides a textual version of the image for screen-readers.</p>
+        <p>The <code class="tag">img</code> tag is the simplest and most common way to display an image in an html page. <img src="http://wudesign.me/resources/using-images/images/smiley.jpg" alt="Smiley Face">It requires a <code>src</code> attribute, which indicates where the browser will find the image, and an <code>alt</code> attribute, which provides a textual version of the image for screen-readers.</p>
 
         <samp><code class="tag">img src="path/to/image.jpg" alt="My image"</code></samp>
 
@@ -41,7 +42,9 @@
           <li>The image will be huge. So, add <code>class="full-screen"</code> to the tag, then use that class as the selector for a style rule that sets <code>width: 100%;</code> on the image.</li>
         </ol>
 
-        <!-- Put the shelf-cloud-wide <img> here. -->
+        <p>
+          <img src="http://wudesign.me/resources/using-images/images/shelf-cloud-wide.jpg" alt="Shelf-Cloud-Wide" class="full-screen">
+        </p>>
 
       </section>
 
@@ -249,8 +252,8 @@
 
       
       <figure class="compressed-image">
-        <!-- your <img> here... -->
-        <figcaption><!-- ---px wide, --% jpeg compression, --KB --></figcaption>
+        <img> src="images/peppa-pig.jpg"
+        <figcaption> <!800px wide, --% jpeg compression, --KB> </figcaption>
       </figure>
         
 
