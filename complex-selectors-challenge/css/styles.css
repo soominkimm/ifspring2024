@@ -1,65 +1,67 @@
+header{
+    margine-bottom: 3rem;
+}
 
-	header {
-	margin-bottom: 3rem;
-	}
+body{
+    line-height: 1.6;
+}
 
-	p {
-	line-height: 1.6;
-	}
+.see-all{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
 
-	a.see-all {
-	font-size: 0.8em;
-	text-transform: uppercase;
-	}
+.shows h1{
+    font-size: 2.5rem;
+}
 
-	.show-title {
-	font-size: 2.5rem;
-	font-weight: lighter;
-	}
+section h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 
-	.section-title {
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: lighter;
-	}
+h1, h2{
+    font-weight: lighter;
+}
 
-	.cast-images {
-	width: 100%;
-	}
+.cast img{
+    width: 100%;
+}
 
-	.castmember {
-	width: 25%;
-	}
+.cast li{
+    width: 25%;
+}
 
-	.show {
-	border-top: 1px solid black;
-	}
+.shows > li{
+    border-top: 1px solid black;
+}
 
-	.navigation .selected {
-	font-weight: bold;
-	color: black;
-	}
 
-	.castmember label {
-	font-size: 0.8rem;
-	}
+.selected a{
+    font-weight: bold;
+    color: black;
+}
 
-	.actor-name {
-	font-weight: bold;
-	}
+.cast div{
+    font-size: 0.8rem;
+}
 
-	.character-name {
-	font-style: italic;
-	}
+.cast div:nth-child(2n) {
+    font-weight: bold;
+}
 
-	.game-of-thrones-seasons li:last-child:after {
-	content: "*";
-	}
+.cast div:nth-child(3n) {
+    font-style: italic;
+}
 
-	.game-of-thrones-seasons:after {
-	content: "* Final Season";
-	display: block;
-	font-size: 0.7rem;
-	color: #999;
-	}
+#game-of-thrones .seasons ul li:last-child::after {
+    content: '*';
+}
+
+#game-of-thrones .seasons ul::after {
+    content: "* Final Season";
+    font-size: 0.7rem;
+    color: #999;
+    display: block;
+}
 
