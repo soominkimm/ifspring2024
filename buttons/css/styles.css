@@ -1,3 +1,4 @@
+/* Styling for James's Buttons */
 body {
     color: #333;
     font-family: 'Open Sans', sans-serif;
@@ -144,3 +145,430 @@ a#btn_indiegogo span {
     position: relative;
     z-index: 10;
 }
+
+/* Styling for Soomin's buttons */
+
+
+/* IBM STYLING + ANIMATION */
+
+a#btn_ibm p{
+    display: inline-block;
+    margin-top: 95px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bevan', serif;
+    font-weight: bold;
+    text-decoration: none;
+    align-content: space-between;
+}
+
+.bee{
+    display: none;
+    width: 80px;
+    height: 80px;
+    margin-top: 95px;
+    margin-left: 85px;
+    align-content: center;
+}
+
+a#btn_ibm:hover p{
+    display: none;
+}
+
+a#btn_ibm:hover, a#btn_ibm:hover .bee{
+    display: block;
+}
+
+@keyframes fly {
+    from { transform: translate(0) rotate(20deg); }
+    to { transform: translate(40%, 100%);}
+}
+
+/* When button is pressed down the bee flies away! Please hold on to the button when pressed to see the bee fly away! */
+a#btn_ibm:active, a#btn_ibm:active .bee{
+    display: block;
+    transform-origin: center bottom;
+    animation-name: fly;
+    animation-duration: 1s;
+    animation-direction:normal;
+}
+
+/* a#btn_ibm:active p{
+    display: block;
+} */
+
+/* OLD NAVY STYLING + ANIMATION */
+a#btn_oldnavy {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: navy;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+a#btn_oldnavy:hover{
+    display: block;
+    transform-origin: center bottom;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-direction:normal;
+}
+
+a#btn_oldnavy:active{
+    background-color: rgb(255, 94, 0);
+}
+
+/* NIKE STYLING + ANIMATION */
+
+a#btn_nike {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.swoosh{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+@keyframes run {
+    from { transform: translate(-10%, 0);} 
+    to { transform: translate(-100%, 0); }
+  }
+
+   a#btn_nike:hover, .swoosh{
+    display: block;
+    transform-origin: center bottom;
+    animation-name: run;
+    animation-duration: 0.7s;
+    animation-direction:normal;
+
+   }
+
+   body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: swoosh 2s infinite alternate;
+}
+
+@keyframes swoosh {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1) rotate(360deg); }
+}
+
+
+/* CARTOON NETWORK STYLING + ANIMATION */
+
+a#btn_cartoon {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0px 30px 0 30px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bowlby One', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    align-content: center;
+}
+
+a#btn_cartoon:hover{
+    transform: translateY(-10%) scale(3);
+}
+
+@keyframes grow {
+    from { transform: scale(1); }
+    33% { transform: rotate(1.5); }
+    66% { transform: rotate(2.5); }
+    to { transform: rotate(3); }
+  }
+
+  a#btn_cartoon:hover{
+    display: block;
+    transform-origin: center bottom;
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+}
+
+/* IDEO STYLING + ANIMATION */
+
+a#btn_ideo{
+    display: inline-block;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px 30px 0 30px;
+    text-decoration: none;
+}
+
+a#btn_ideo p{
+    padding-top: 0;
+    margin: 0;
+    font-size: 30px;
+    color: black;
+    font-family: 'Sometype Mono', monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_ideo:hover p{
+    display: none;
+}
+
+a#btn_ideo:hover{
+    display: block;
+}
+
+a#btn_ideo:active + .ideo{
+    display: block;
+}
+
+/* COCA COLA STYLING + ANIMATION */
+
+a#btn_cola {
+    display: inline-block;
+    margin: auto;
+    color: #f40000;
+    font-size: 30px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_cola .cokecap{
+    margin-top: 70px;
+    width: 165px;
+    height: 100px;
+}
+
+a#btn_cola p{
+    display: none;
+}
+
+@keyframes seesaw {
+    from{transform: rotate(0);}
+    25%{transform: rotate(-45deg);}
+    75%{transform: rotate(45deg);}
+    to{transform: rotate(-45deg);}
+    
+}
+
+a#btn_cola:hover .cokecap{
+    animation-name: seesaw;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+a#btn_cola:active .cokecap{
+    display: none;
+}
+
+a#btn_cola:active p{
+    display: block;
+    margin-top: 105px;
+}
+
+
+
+/* APPLE STYLING + ANIMATION */
+
+a#btn_apple {
+    position: relative;
+    font-size: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 38px;
+    padding: 10px 30px 0 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    animation: linear infinite, color-change 5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* FACEBOOK STYLING + ANIMATION */
+
+a#btn_facebook {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 90px;
+    padding: 10px 30px 0 30px;
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_facebook:hover{
+    text-shadow: 0 0 15px #76aaee;
+    background-color: white;
+    color: #1877f2;
+    font-size: 45px;
+
+}
+
+/* LYFT STYLING + ANIMATION */
+
+
+a#btn_lyft {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 90px;
+    color: rgb(255, 0, 191) ;
+    font-size: 60px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.car{
+    margin-top: 90px;
+    color: rgb(255, 0, 191) ;
+    font-size: 60px;
+    padding-left: 1px;
+}
+
+@keyframes drive {
+    from { transform: translate(0, 0) translate(-10, 0);} 
+    to { transform: translate(100%, 0); }
+}
+
+a#btn_lyft:hover{
+    display: block;
+    transform-origin: center;
+    animation-name: drive;
+    animation-duration: 0.8s;
+    animation-direction:normal;
+    filter: hue-rotate(60deg);
+    }
+
+a#btn_lyft::after {
+        content: "";
+        position: absolute;
+        bottom: 20px; /* Position at the bottom of the logo */
+        left: 50%; /* Start from the center of the logo */
+        width: 10px;
+        height: 10px;
+        background-color: rgba(113, 110, 110, 0.8); /* Semi-transparent white */
+        border-radius: 50%;
+        animation: smoke 4s infinite linear;
+    }
+    
+    @keyframes smoke {
+        0% {
+            transform: translate(-50%, 0) scale(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translate(-50%, -50px) scale(1);
+            opacity: 0.5;
+        }
+        100% {
+            transform: translate(-50%, -100px) scale(0);
+            opacity: 0;
+        }
+    }
+
+
+
+/* FOREFLIGHT STYLING + ANIMATION */
+
+a#btn_foreflight {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 30px 0 30px;
+    color: #565758;
+    font-size: 25px;
+    font-family: "gesta",clean,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_foreflight i{
+    margin-top: 85px;
+}
+
+a#btn_foreflight p{
+    margin-top: 0;
+}
+
+@keyframes up {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, -100px);}
+}
+
+a#btn_foreflight:hover i{
+    animation-name: up;
+    animation-duration: 0.5s;
+}
+
+@keyframes down {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, 60%);}
+}
+
+a#btn_foreflight:hover p{
+    animation-name: down;
+    animation-duration: 0.5s;
+    text-shadow: 0 0 15px #6a7886;
+    color: white;
+
+}
+
