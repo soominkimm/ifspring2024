@@ -1,4 +1,3 @@
-/* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body {
     cursor: url(../images/pixel\ plane.png), auto;
 }
 
-/* Header styles */
+/* HEADER */
 header {
     background-color: #000000;
     color: #fff;
@@ -30,12 +29,19 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    padding-bottom: 20px;
     font-size: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.pixel-plane {
+    padding-bottom: 30px;
+    padding-left: none;
+    margin-right: 540px;
 }
 
 h1 {
@@ -45,12 +51,15 @@ h1 {
 h2 {
     padding-top: 10px;
 }
-/* Intro styles */
 
-.pixel-plane {
-    padding-bottom: 20px;
-    padding-right: 680px;
+
+/* MAIN CONTENT */
+
+main {
+    padding: 0px;
 }
+
+/* -->INTRO<-- */
 
 .intro-image {
     height: 600px;
@@ -74,27 +83,16 @@ img .intro-image {
     background-color: black;
 }
 
-.column_container2 {
-    color: white;
-    padding-bottom: 100px;
-}
-
-h3 {
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
-/* Main content styles */
-main {
-    padding: 0px;
-}
-
 .column_container1 {
-    height: 1000px;
+    color: white;
+    height: 700px;
     width: auto;
     background-color: black;
     padding: none;
     margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
 }
 
 h2 {
@@ -102,7 +100,83 @@ h2 {
     font-size: 25px;
 }
 
-/* Footer styles */
+h3 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/* -->LATEST NEWS<-- */
+
+h4 {
+    font-size: 40px;
+    color: white;
+}
+
+h5 {
+    color: white;
+    padding-bottom: none;
+    margin-left: 5px;
+    padding-left: none;
+    margin-bottom: 10px;
+}
+
+.column_container2 p {
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.column_container2 {
+    background-color: rgb(38, 37, 37);
+    border-top-color:beige;
+}
+
+.content_grid .column_container2{
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+
+.grid_img {
+    width: 250px;
+    height: 170px;
+    padding-right: 30px;
+    padding-left: 10px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.content_grid .column_container2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+.content_grid .column_container2 ul li{
+    display: block;
+    width:50%;
+    text-align: left;
+    display: flex;
+    padding-bottom: 22px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+
+
+/* FOOTER */
 footer {
     background-color: #000000;
     color: #fff;
